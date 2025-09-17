@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html>
 <head>
     <meta charset="UTF-8">
     <title>SZENTPÉTER Simulator</title>
@@ -8,19 +8,12 @@
         body {
             margin: 0;
             padding: 0;
-            overflow: hidden;
         }
         img {
             width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-            position: fixed;
-            top: 0;
-            left: 0;
-            object-position: center;
+            height: auto;
             display: block;
-            min-width: 100%;
-            min-height: 100%;
+            margin: 0 auto;
         }
         @supports (padding: env(safe-area-inset-top)) {
             body {
@@ -29,6 +22,9 @@
                 padding-left: env(safe-area-inset-left);
                 padding-right: env(safe-area-inset-right);
             }
+        }
+        html, body {
+            min-height: 100vh;
         }
     </style>
 </head>

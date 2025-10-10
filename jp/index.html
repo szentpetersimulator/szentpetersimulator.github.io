@@ -1,1 +1,37 @@
-
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>聖ペトロ シミュレーター</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/szentpetersimulator/szentpetersimulator.github.io/refs/heads/main/favicon.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #252429;
+        }
+        img {
+            width: 100vw;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        @supports (padding: env(safe-area-inset-top)) {
+            body {
+                padding-top: env(safe-area-inset-top);
+                padding-bottom: env(safe-area-inset-bottom);
+                padding-left: env(safe-area-inset-left);
+                padding-right: env(safe-area-inset-right);
+            }
+        }
+        html, body {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <picture>
+        <source media="(max-width: 767px)" srcset="szps_mobile.img-jp.jpg">
+        <img src="szps-jp.jpg">
+    </picture>
+</body>
